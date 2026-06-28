@@ -1,0 +1,143 @@
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.lead {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.kanji {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.kana {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+.badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.native {
+  background: var(--color-native-soft);
+  color: var(--color-native);
+}
+.sino {
+  background: var(--color-sino-soft);
+  color: var(--color-sino);
+}
+.loan {
+  background: #f0e6f0;
+  color: var(--color-loan);
+}
+
+.meaning {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.romajiRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.romaji {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.reveal {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  border: none;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.78rem;
+}
+.reveal:hover {
+  background: #dce4f2;
+}
+
+.pos {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.note {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.noteLabel {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  margin-right: 0.45rem;
+}
+
+.examples {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0 0;
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.exKana {
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+.exEn {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+.footer {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
+  border-radius: 6px;
+  padding: 0.1rem 0.45rem;
+}

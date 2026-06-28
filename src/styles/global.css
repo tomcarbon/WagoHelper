@@ -1,0 +1,79 @@
+:root {
+  /* Palette — a calm, paper-and-ink feel with an indigo (藍) accent. */
+  --color-bg: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0ede5;
+  --color-border: #e0dccf;
+  --color-text: #2a2a28;
+  --color-text-muted: #6b6960;
+  --color-accent: #2e4a7d; /* ai-iro, indigo */
+  --color-accent-soft: #e7ecf5;
+  --color-native: #3a7d44; /* native / kun */
+  --color-native-soft: #e6f1e7;
+  --color-sino: #a05a2c; /* sino / on */
+  --color-sino-soft: #f4e9df;
+  --color-loan: #7d4a7d; /* loan / gairaigo */
+
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --maxw: 1040px;
+
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-jp: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP',
+    'Yu Gothic', Meiryo, system-ui, sans-serif;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Anything Japanese gets the JP font stack via this utility class. */
+.jp {
+  font-family: var(--font-jp);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.4em;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}

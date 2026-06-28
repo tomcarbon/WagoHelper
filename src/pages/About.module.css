@@ -1,0 +1,77 @@
+.prose {
+  max-width: 70ch;
+}
+
+.prose h2 {
+  font-size: 1.35rem;
+  margin: 2rem 0 0.6rem;
+}
+
+.prose p {
+  margin: 0 0 1rem;
+}
+
+.prose ol {
+  padding-left: 1.3rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.regCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  background: var(--color-surface);
+  border-top: 4px solid var(--color-border);
+}
+
+.regCard h3 {
+  margin: 0.3rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.regCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.regJa {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.native {
+  border-top-color: var(--color-native);
+}
+.native .regJa {
+  color: var(--color-native);
+}
+.sino {
+  border-top-color: var(--color-sino);
+}
+.sino .regJa {
+  color: var(--color-sino);
+}
+.loan {
+  border-top-color: var(--color-loan);
+}
+.loan .regJa {
+  color: var(--color-loan);
+}
+
+.note {
+  background: var(--color-accent-soft);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  font-size: 0.92rem;
+}

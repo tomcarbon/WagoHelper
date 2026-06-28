@@ -1,0 +1,44 @@
+/* Shared page-level building blocks, imported by individual pages. */
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.titleJa {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 62ch;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.empty {
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  color: var(--color-text-muted);
+}
