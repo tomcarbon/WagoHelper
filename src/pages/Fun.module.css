@@ -1,0 +1,67 @@
+/* Games hub grid — mirrors the ModuleCard look from Research. */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  color: var(--color-text);
+  transition: border-color 0.12s ease, transform 0.12s ease;
+}
+
+a.card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.disabled {
+  opacity: 0.6;
+}
+
+.cardJa {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.cardBlurb {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  flex: 1;
+}
+
+.play {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: 0.5rem;
+}
+
+.soon {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}

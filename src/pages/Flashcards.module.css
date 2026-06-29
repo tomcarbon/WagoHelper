@@ -1,0 +1,258 @@
+/* Flashcard drill — shares the paper-and-ink palette from global.css. */
+
+.setup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  align-items: end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fieldLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.03em;
+}
+
+.select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+}
+
+.startRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: var(--color-sino);
+}
+
+/* Buttons */
+.primary,
+.secondary,
+.reveal,
+.again,
+.got {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid transparent;
+  transition: filter 0.12s ease, background 0.12s ease;
+}
+
+.primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+.primary:hover {
+  filter: brightness(1.08);
+}
+.primary:disabled {
+  background: var(--color-border);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: var(--color-surface);
+  color: var(--color-accent);
+  border-color: var(--color-border);
+}
+.secondary:hover {
+  background: var(--color-accent-soft);
+}
+
+/* Game area */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 520px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.flashcard {
+  width: 100%;
+  max-width: 520px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.5rem;
+}
+.flashcard:hover {
+  border-color: var(--color-accent);
+}
+
+.cardKanji {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+.cardPrompt {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-text);
+  max-width: 24ch;
+}
+
+.flipHint {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.cardKana {
+  font-size: 1.6rem;
+  color: var(--color-accent);
+}
+.cardRomaji {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+.cardMeaning {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.cardPos {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+/* Grading row */
+.grades {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 520px;
+  justify-content: center;
+}
+
+.reveal {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  flex: 1;
+}
+
+.again {
+  background: var(--color-sino-soft);
+  color: var(--color-sino);
+  flex: 1;
+}
+.again:hover {
+  filter: brightness(0.97);
+}
+
+.got {
+  background: var(--color-native-soft);
+  color: var(--color-native);
+  flex: 1;
+}
+.got:hover {
+  filter: brightness(0.97);
+}
+
+kbd {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+  margin-left: 0.4rem;
+}
+
+/* Summary */
+.summary {
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 1.5rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.summaryJa {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+}
+.summaryTitle {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+.summaryStat {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.summaryStat strong {
+  color: var(--color-text);
+}
+.accuracy {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-native);
+  background: var(--color-native-soft);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+}
+.summaryActions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}

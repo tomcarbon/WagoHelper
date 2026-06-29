@@ -36,7 +36,7 @@ src/
   data/         the collection — one file per module + modules.ts registry
   context/      SettingsContext (localStorage-backed preferences)
   components/   Layout, Nav, ModuleCard, ModuleView, EntryCard, FilterBar
-  pages/        Home, Research, ModulePage, Fun, Settings, About
+  pages/        Home, Research, ModulePage, Fun, Flashcards, Settings, About
   styles/       global.css (theme variables, JP font stack)
 ```
 
